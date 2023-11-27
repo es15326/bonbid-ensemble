@@ -1,0 +1,53 @@
+LoadImaged:
+  keys: ["image", "label"]
+
+EnsureChannelFirstd:
+  keys: ["image", "label"]
+
+Spacingd:
+  keys: ["image", "label"]
+  pixdim: [1.0, 1.0, 1.0]
+  mode: ["bilinear", "nearest"]
+
+CropForegroundd:
+  keys: ["image", "label"]
+  source_key: "image"
+
+SpatialPadd:
+  keys: ["image", "label"]
+  spatial_size: [256, 256, 32]
+
+RandCropByPosNegLabeld:
+  keys: ["image", "label"]
+  label_key: "label"
+  spatial_size: [128, 128, 32]
+  pos: 1
+  neg: 1
+  num_samples: 4
+  image_key: "image"
+  image_threshold: 0
+
+RandFlipd:
+  keys: ["image", "label"]
+  spatial_axis: [0]
+  prob: 0.10
+
+RandFlipd:
+  keys: ["image", "label"]
+  spatial_axis: [1]
+  prob: 0.10
+
+RandFlipd:
+  keys: ["image", "label"]
+  spatial_axis: [2]
+  prob: 0.10
+
+RandRotate90d:
+  keys: ["image", "label"]
+  prob: 0.10
+  max_k: 3
+
+RandShiftIntensityd:
+  keys: ["image"]
+  offsets: 0.10
+  prob: 0.50

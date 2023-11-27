@@ -1,0 +1,10 @@
+LoadImaged:
+  keys: ["image", "label"]
+
+EnsureChannelFirstd:
+  keys: ["image", "label"]
+
+Spacingd:
+  keys: ["image", "label"]
+  pixdim: [1.0, 1.0, 1.0]
+  mode: ["bilinear", "nearest"]
