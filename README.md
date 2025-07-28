@@ -4,13 +4,13 @@
 
 <h1 align="center">BONBID‑Ensemble</h1>
 <p align="center"><strong>Ensemble Framework for Neonatal Brain Injury Prediction</strong><br>
-<i>🥉 Ranked 3rd in the <a href="https://bonbid-hie2023.grand-challenge.org/">MICCAI 2023 BONBID‑HIE Challenge</a></i></p>
+<i>🥉 Ranked 3rd in the <a href="https://bonbid-hie2023.grand-challenge.org">MICCAI 2023 BONBID‑HIE Challenge</a></i></p>
 
 ---
 
 ## 🔬 Challenge Background
 
-BONBID‑HIE (Boston Neonatal Brain Injury Dataset for Hypoxic‑Ischemic Encephalopathy) is the official MICCAI 2023 challenge focused on lesion segmentation in neonatal MRI. The challenge dataset, evaluation protocol, and leaderboards are hosted on the [Grand Challenge portal](https://bonbid-hie2023.grand-challenge.org/workshop/).
+BONBID‑HIE (Boston Neonatal Brain Injury Dataset for Hypoxic‑Ischemic Encephalopathy) is the official MICCAI 2023 challenge focused on lesion segmentation in neonatal MRI. The challenge dataset, evaluation protocol, and leaderboards are hosted on the [Grand Challenge portal](https://bonbid-hie2023.grand-challenge.org).
 
 Six out of fourteen submissions were accepted into the official MICCAI 2023 proceedings, including **“Enhancing Lesion Segmentation in the BONBID‑HIE Challenge: An Ensemble Strategy”**, which presents a transformer‑based ensemble method (e.g. Swin‑UNETR) achieving top-tier results.
 
@@ -90,15 +90,14 @@ bash export.sh
 
 ## 📊 Challenge Metrics Summary
 
-| Metric        | Score         |
-|---------------|---------------|
-| Mean Dice     | ≥ 0.87        |
-| Hausdorff     | ≤ 4.3 mm      |
-| MICCAI 2023   | 3rd Place     |
+| Metric         | Value               | Rank   |
+|----------------|---------------------|--------|
+| **Mean Dice**  | 0.7338 ± 0.2491     | 🥉 3rd |
+| **MASD**       | 0.5741 ± 0.2387     | 5th    |
+| **NDS**        | 2.6668 ± 3.4076     | 5th    |
+| **Hausdorff**  | 4.3 mm              | —      |
 
-These results correspond to our official leaderboard entry in the BONBID‑HIE challenge.
-
----
+> These scores are based on official BONBID‑HIE leaderboard evaluation at MICCAI 2023. Our ensemble achieved the 3rd highest Mean Dice, a critical segmentation metric for clinical tasks.
 
 ## 📚 Citation
 
@@ -120,7 +119,7 @@ Please cite our work and the official MICCAI paper if you use this repository:
 
 ## 🤝 Acknowledgements
 
-- [BONBIDE‑HIE Challenge 2023](https://bonbid-hie2023.grand-challenge.org/)
+- [BONBIDE‑HIE Challenge 2023](https://bonbid-hie2023.grand-challenge.org)
 - The neonatal imaging AI research community
 - Projects like PyTorch, MONAI, and related imaging toolkits
 
