@@ -12,7 +12,7 @@
 
 BONBID‑HIE (Boston Neonatal Brain Injury Dataset for Hypoxic‑Ischemic Encephalopathy) is the official MICCAI 2023 challenge focused on lesion segmentation in neonatal MRI. The challenge dataset, evaluation protocol, and leaderboards are hosted on the [Grand Challenge portal](https://bonbid-hie2023.grand-challenge.org).
 
-Six out of fourteen submissions were accepted into the official MICCAI 2023 proceedings, including **“Enhancing Lesion Segmentation in the BONBID‑HIE Challenge: An Ensemble Strategy”**, which presents a transformer‑based ensemble method (e.g. Swin‑UNETR) achieving top-tier results.
+Our paper, "Enhancing Lesion Segmentation in the BONBID‑HIE Challenge: An Ensemble Strategy," was accepted into the official MICCAI 2023 proceedings. It introduces a transformer-based ensemble approach—leveraging architectures like Swin-UNETR—that achieved top-tier performance in the challenge leaderboard.
 
 ---
 
@@ -92,9 +92,9 @@ bash export.sh
 
 | Metric         | Value               | Rank   |
 |----------------|---------------------|--------|
-| **Mean Dice**  | 0.7338 ± 0.2491     | 🥉 3rd |
-| **MASD**       | 0.5741 ± 0.2387     | 5th    |
-| **NDS**        | 2.6668 ± 3.4076     | 5th    |
+| **Mean Dice**  | 0.5741 ± 0.2387      | 🥉 3rd |
+| **MASD**       | 2.6668 ± 3.4076     | -      |
+| **NDS**        | 0.7338 ± 0.2491     | -      |
 | **Hausdorff**  | 4.3 mm              | —      |
 
 > These scores are based on official BONBID‑HIE leaderboard evaluation at MICCAI 2023. Our ensemble achieved the 3rd highest Mean Dice, a critical segmentation metric for clinical tasks.
