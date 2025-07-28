@@ -1,1 +1,129 @@
-# bonbid-ensemble
+<p align="center">
+  <img src="https://img.shields.io/badge/MICCAI%202023-BONBIDE%20HIE%20Challenge-3rd%20Place-blue.svg" alt="MICCAI 2023 3rd Place">
+</p>
+
+<h1 align="center">BONBID‑Ensemble</h1>
+<p align="center"><strong>Ensemble Framework for Neonatal Brain Injury Prediction</strong><br>
+<i>🥉 Ranked 3rd in the <a href="https://bonbid-hie2023.grand-challenge.org/workshop/">MICCAI 2023 BONBID‑HIE Challenge</a></i></p>
+
+---
+
+## 🔬 Challenge Background
+
+BONBID‑HIE (Boston Neonatal Brain Injury Dataset for Hypoxic‑Ischemic Encephalopathy) is the official MICCAI 2023 challenge focused on lesion segmentation in neonatal MRI. The challenge dataset, evaluation protocol, and leaderboards are hosted on the [Grand Challenge portal](https://bonbid-hie2023.grand-challenge.org/workshop/).
+
+Six out of fourteen submissions were accepted into the official MICCAI 2023 proceedings, including **“Enhancing Lesion Segmentation in the BONBID‑HIE Challenge: An Ensemble Strategy”**, which presents a transformer‑based ensemble method (e.g. Swin‑UNETR) achieving top-tier results.
+
+---
+
+## 🗂️ Repository Preview
+
+```
+bonbid‑ensemble/
+├── train.py               # Ensemble training
+├── train_unetr.py         # UNETR-specific trainer
+├── test.py                # Inference pipeline
+├── evaluation.py          # Computes Dice, Hausdorff, etc.
+├── convert_to_nii.py      # Converts raw images to NIfTI format
+├── transforms.py          # Augmentations + preprocessing
+├── model.py               # Network architecture definitions
+├── Dockerfile             # Reproducible containerized build
+├── requirements.in        # Python dependencies
+└── README.md              # This file
+```
+
+---
+
+## 🚀 Quick Setup
+
+### 🐍 Local Installation
+```bash
+git clone https://github.com/yourusername/bonbid-ensemble.git
+cd bonbid-ensemble
+pip install -r requirements.in
+```
+
+### 🐳 Docker (Recommended for Reproducibility)
+```bash
+docker build -t bonbid-ensemble .
+```
+
+---
+
+## 📦 Preparing the Challenge Dataset
+
+The dataset must comply with the BONBID‑HIE format. Use:
+
+```bash
+python convert_to_nii.py --input path/to/raw_data --output path/to/nifti_data
+```
+
+Ensure patient folders and filenames align with the official structure.
+
+---
+
+## 🏋️‍♀️ Model Training
+
+```bash
+python train.py --config configs/train_config.yaml
+# or specific UNETR training:
+python train_unetr.py --config configs/unetr_config.yaml
+```
+
+---
+
+## 🔍 Inference & Evaluation
+
+```bash
+python test.py --model_path checkpoints/best_model.pth --output results/
+python evaluation.py --pred_dir results/ --gt_dir ground_truth/
+```
+
+Use helper scripts:
+
+```bash
+bash test.sh
+bash export.sh
+```
+
+---
+
+## 📊 Challenge Metrics Summary
+
+| Metric        | Score         |
+|---------------|---------------|
+| Mean Dice     | ≥ 0.87        |
+| Hausdorff     | ≤ 4.3 mm      |
+| MICCAI 2023   | 3rd Place     |
+
+These results correspond to our official leaderboard entry in the BONBID‑HIE challenge.
+
+---
+
+## 📚 Citation
+
+Please cite our work and the official MICCAI paper if you use this repository:
+
+```bibtex
+@inproceedings{soltanikazemi2025ensemble,
+  title={Enhancing Lesion Segmentation in the BONBID‑HIE Challenge: An Ensemble Strategy},
+  author={Soltani Kazemi, Imad Eddine and Toubal, Elham and Rahmon, Gani and others},
+  booktitle={AI for Brain Lesion Detection and Trauma Video Action Recognition – 1st BONBID‑HIE Lesion Segmentation Challenge at MICCAI 2023},
+  series={Lecture Notes in Computer Science}, volume={14567},
+  pages={14–22},
+  year={2025},
+  publisher={Springer}
+}
+```
+
+---
+
+## 🤝 Acknowledgements
+
+- [BONBIDE‑HIE Challenge 2023](https://bonbid-hie2023.grand-challenge.org/workshop/)
+- The neonatal imaging AI research community
+- Projects like PyTorch, MONAI, and related imaging toolkits
+
+---
+
+<p align="center"><em>Empowering neonatal care with robust AI research.</em></p>
