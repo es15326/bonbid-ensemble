@@ -4,7 +4,7 @@
 
 <h1 align="center">BONBID‑Ensemble</h1>
 <p align="center"><strong>Ensemble Framework for Neonatal Brain Injury Prediction</strong><br>
-<i>🥉 Ranked 3rd in the <a href="https://bonbid-hie2023.grand-challenge.org/workshop/">MICCAI 2023 BONBID‑HIE Challenge</a></i></p>
+<i>🥉 Ranked 3rd in the <a href="https://bonbid-hie2023.grand-challenge.org/">MICCAI 2023 BONBID‑HIE Challenge</a></i></p>
 
 ---
 
@@ -120,7 +120,7 @@ Please cite our work and the official MICCAI paper if you use this repository:
 
 ## 🤝 Acknowledgements
 
-- [BONBIDE‑HIE Challenge 2023](https://bonbid-hie2023.grand-challenge.org/workshop/)
+- [BONBIDE‑HIE Challenge 2023](https://bonbid-hie2023.grand-challenge.org/)
 - The neonatal imaging AI research community
 - Projects like PyTorch, MONAI, and related imaging toolkits
 
