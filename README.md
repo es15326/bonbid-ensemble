@@ -41,7 +41,7 @@ bonbid‑ensemble/
 
 ### 🐍 Local Installation
 ```bash
-git clone https://github.com/yourusername/bonbid-ensemble.git
+git clone https://github.com/es15326/bonbid-ensemble.git
 cd bonbid-ensemble
 pip install -r requirements.in
 ```
@@ -97,7 +97,7 @@ bash export.sh
 |----------------|---------------------|--------|
 | **Mean Dice**  | 0.5741 ± 0.2387      | 🥉 3rd |
 | **MASD**       | 2.6668 ± 3.4076     | —      |
-| **NDS**        | 0.7338 ± 0.2491     | —      |
+| **NSD**        | 0.7338 ± 0.2491     | —      |
 | **Hausdorff**  | 4.3 mm              | —      |
 
 > These scores are based on official BONBID‑HIE leaderboard evaluation at MICCAI 2023. Our ensemble achieved the 3rd highest Mean Dice, a critical segmentation metric for clinical tasks.
