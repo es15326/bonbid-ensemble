@@ -32,7 +32,7 @@ bonbid‑ensemble/
 ├── model.py               # Network architecture definitions
 ├── Dockerfile             # Reproducible containerized build
 ├── requirements.in        # Python dependencies
-└── README.md              # This file
+└── README.md              
 ```
 
 ---
