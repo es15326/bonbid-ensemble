@@ -1,6 +1,9 @@
+<h1 align="center">BONBID-Ensemble</h1>
+
 <p align="center">
-  <img src="https://img.shields.io/badge/MICCAI%202023-BONBIDE%20HIE%20Challenge-3rd%20Place-blue.svg" alt="MICCAI 2023 3rd Place">
+  <img src="https://img.shields.io/badge/BONBIDE--HIE-MICCAI_2023_3rd_Place-blue" alt="MICCAI 2023 Badge"/>
 </p>
+
 
 <h1 align="center">BONBID‑Ensemble</h1>
 <p align="center"><strong>Ensemble Framework for Neonatal Brain Injury Prediction</strong><br>
