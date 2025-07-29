@@ -5,7 +5,6 @@
 </p>
 
 
-<h1 align="center">BONBID‑Ensemble</h1>
 <p align="center"><strong>Ensemble Framework for Neonatal Brain Injury Prediction</strong><br>
 <i>🥉 Ranked 3rd in the <a href="https://bonbid-hie2023.grand-challenge.org">MICCAI 2023 BONBID‑HIE Challenge</a></i></p>
 
